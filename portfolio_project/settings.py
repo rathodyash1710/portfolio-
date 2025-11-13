@@ -125,14 +125,13 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # At the bottom of settings.py
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:5173",  # If using Vite
-     'https://portfolio-frontend-a3cr.onrender.com/'
-]
-CSRF_TRUSTED_ORIGINS = [
-     'https://portfolio-frontend-a3cr.onrender.com/'
+    "https://portfolio-frontend-a3cr.onrender.com",  # ← No trailing slash
+    "http://localhost:5173",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://portfolio-frontend-a3cr.onrender.com",  # ← No trailing slash here either
+]
 
 # For development only - remove in production
 CORS_ALLOW_ALL_ORIGINS = True
