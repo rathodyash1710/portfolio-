@@ -129,6 +129,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # If using Vite
      'https://portfolio-frontend-a3cr.onrender.com/'
 ]
+CSRF_TRUSTED_ORIGINS = [
+     'https://portfolio-frontend-a3cr.onrender.com/'
+]
+
 
 # For development only - remove in production
 CORS_ALLOW_ALL_ORIGINS = True
